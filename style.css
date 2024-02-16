@@ -6,29 +6,66 @@
     color: #333; /* Dark blue text */
 }
 
+/* Updated CSS to handle responsiveness */
+
 header {
-    background-color: #333; /* Dark blue header */
-    color: #fff; /* White text in header */
-    padding: 10px 0;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
 }
 
 nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center; /* Center the navigation items */
 }
 
 nav li {
-    display: inline-block;
-    margin-left: 20px;
-    margin-right: 20px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 nav a {
-    color: #fff; /* White links */
-    text-decoration: none;
-    font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
 }
+
+/* Hide the menu toggle by default */
+.menu-toggle {
+  display: none;
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+  nav ul {
+      display: none; /* Hide the navigation items by default */
+      width: 100%; /* Full width */
+      position: absolute; /* Position the dropdown menu */
+      background-color: #333; /* Dark background */
+      top: 40px; /* Position below the header */
+      left: 0;
+  }
+
+  nav ul.show {
+      display: block; /* Show the navigation items when the class 'show' is added */
+  }
+
+  nav li {
+      display: block;
+      margin: 0;
+      text-align: center; /* Center the navigation items */
+  }
+
+  .menu-toggle {
+      display: block; /* Show the menu toggle on smaller screens */
+      text-align: right;
+      cursor: pointer;
+  }
+}
+
 
 #home {
     text-align: center;
