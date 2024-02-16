@@ -239,7 +239,7 @@ background-color: white;
     margin-bottom: 10px;
 }
 
-.project-item h3 a {
+.project-item h4 a {
     color: #333; /* Dark blue text color */
     text-decoration: none;
 }
