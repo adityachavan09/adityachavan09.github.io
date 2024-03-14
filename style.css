@@ -69,7 +69,7 @@ nav a {
 
 #home {
     text-align: center;
-    height: 500px; /* Adjust height as needed */
+    height: 100vh; /* Adjust height as needed */
     background-size: cover;
     background-position: center;
 }
